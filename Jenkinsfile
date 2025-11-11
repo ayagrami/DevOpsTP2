@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Cloner le dépôt') {
             steps {
-                git branch: 'main', url: 'https://github.com/eya/myapp.git'
+                git branch: 'main', url: 'https://github.com/ayagrami/DevOpsTP2.git'
             }
         }
 
