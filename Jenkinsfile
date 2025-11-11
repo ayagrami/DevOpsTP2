@@ -1,7 +1,7 @@
 pipeline {
-    agent {        docker { image 'maven:3.9.4-openjdk-17' }
-}
-
+    agent {
+        docker { image 'maven:3.9.4-openjdk-17' }
+    }
     environment {
         DOCKER_HUB_CREDENTIALS = 'docker-hub-credentials'
         IMAGE_NAME = 'ayagrami/tp2devops'
