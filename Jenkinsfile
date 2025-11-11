@@ -1,5 +1,6 @@
 pipeline {
-    agent any
+    agent {        docker { image 'maven:3.9.4-openjdk-17' }
+}
 
     environment {
         DOCKER_HUB_CREDENTIALS = 'docker-hub-credentials'
